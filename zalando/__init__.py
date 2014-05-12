@@ -4,3 +4,5 @@
 __author__ = 'Nar Kumar Chhantyal'
 __email__ = 'noblenara@gmail.com'
 __version__ = '0.1.0'
+
+from zalando import *
