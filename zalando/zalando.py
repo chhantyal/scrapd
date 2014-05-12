@@ -24,7 +24,6 @@ def get_category(path):
         article_dict['brand'] = article.find('b').text
         article_dict['name'] = article.find('em').text
         article_dict['price'] = article.find('span', class_='price').text
-        import ipdb; ipdb.set_trace()
         articles_list.append(article_dict)
     category_dict = {'name': path, 'url': url, 'articles': articles_list}
     return category_dict

@@ -4,12 +4,24 @@
 import sys
 import argparse
 
-from flask import Flask
+from flask import Flask, request, jsonify
+
+from zalando import get_category
+
 app = Flask(__name__)
+app.debug = True
+
 
 @app.route('/')
 def hello_world():
     return 'Hello World!'
+
+@app.route('/get_category')
+def get_category_from_zalando():
+    path = 'damenbekleidung-jeans-straight-leg'
+    category_dict = get_category(path)
+    return jsonify(**category_dict)
+    # return 'Please enter valid category!'
 
 def cli_options(args):
     description = 'Run flask app to scrap zalando.de'
