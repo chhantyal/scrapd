@@ -14,6 +14,7 @@ def get_category(path):
     """
     url = '{base_url}/{path}'.format(base_url=BASE_URL, path=path)
     r = requests.get(url=url)
+    assert r.status_code == 200
     soup = BeautifulSoup(r.content)
     all_articles = soup.find('ul', class_='catalog').find_all('a', class_='productBox')
 
