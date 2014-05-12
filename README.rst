@@ -34,6 +34,7 @@ The Flask app exposes same functionality to the web interface.
 
 Install
 --------
+    Steps ::
 
     $ git clone https://github.com/chhantyal/zalando or get gzipped package
 
@@ -41,5 +42,7 @@ Install
     used to run flask app::
 
     $ python setup.py install
+
+    To run the zalando command line app::
 
     $ zalando # runs flask app at port 5000. Use --port to specify different port.
