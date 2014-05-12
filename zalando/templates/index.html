@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zalando - web scrapping library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="header navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/">Zalando</a>
+      </div>
+    </div>
+
+    <div class="container">
+      {% block content %}
+        <h4>Welcome to Zalando - web scrapping utils.</h4>
+        <p>This app let's you scrap content from www.zalando.de. Please enter a category path/name.</p>
+        <div class="row">
+          <div class="col-md-4">
+            {% if form_error %}
+              <p>{{ form_error }}</p>
+            {% endif %}
+            <form class="form-horizontal" action="/" method="post">
+              <input type="text" placeholder="Please enter category path" required="required" class="form-control" name="category_path">
+              <button type="submit" class="btn btn-success">submit</button>
+            </form>
+          </div>
+         </div>
+      {% endblock content %}
+
+    </div> <!-- /container -->
+  </body>
+</html>
