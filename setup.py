@@ -41,7 +41,7 @@ setup(
     include_package_data=True,
     install_requires=requirements,
     license="BSD",
-    zip_safe=False,
+    zip_safe=True,
     keywords='zalando',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -55,5 +55,10 @@ setup(
         'Programming Language :: Python :: 3.3',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+    console=['zalando'],
+    entry_points={
+        'console_scripts': ['zalando = zalando.__main__.main'],
+    },
+
 )
