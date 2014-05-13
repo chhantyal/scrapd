@@ -24,7 +24,7 @@ requirements = [
     "MarkupSafe==0.23",
     "Werkzeug==0.9.4",
     "argparse==1.2.1",
-    "beautifulsoup4==4.3.2",
+    "beautifulsoup4",
     "distlib==0.1.8",
     "futures==2.1.6",
     "gnureadline==6.3.3",
