@@ -1,20 +1,11 @@
 ===============================
-zalando
+scrapd
 ===============================
-
-.. image:: https://badge.fury.io/py/zalando.png
-    :target: http://badge.fury.io/py/zalando
-    
-.. image:: https://travis-ci.org/chhantyal/zalando.png?branch=master
-        :target: https://travis-ci.org/chhantyal/zalando
-
-.. image:: https://pypip.in/d/zalando/badge.png
-        :target: https://pypi.python.org/pypi/zalando
 
 
 Python web scrapping utils.
 
-``zalando`` is small util as well as Flask application to scrap contents from www.zalando.de.
+``scrapd`` is small util as well as Flask application to scrap contents from www.zalando.de.
 
 Usage
 -----
